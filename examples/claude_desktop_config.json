@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "socialdatax-youtube": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.socialdatax.com/youtube/mcp",
+        "--header",
+        "Authorization: Bearer <SOCIALDATAX_API_KEY>"
+      ]
+    }
+  }
+}

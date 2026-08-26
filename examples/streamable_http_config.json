@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "socialdatax-youtube": {
+      "type": "streamable_http",
+      "url": "https://mcp.socialdatax.com/youtube/mcp",
+      "headers": {
+        "Authorization": "Bearer <SOCIALDATAX_API_KEY>"
+      }
+    }
+  }
+}
