@@ -11,7 +11,7 @@ This public listing provides connection metadata and client examples for the hos
 - Website and API Key access: <https://socialdatax.com/ai?from=github>
 - Registry name: `com.52choujiang/youtube-insights`
 - Future registry name: `com.socialdatax/youtube-insights`
-- Current public capability version: `0.1.0`
+- Current public capability version: `0.1.1`
 
 ## Scope
 

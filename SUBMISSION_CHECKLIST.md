@@ -4,7 +4,7 @@
 
 - Registry name: `com.52choujiang/youtube-insights`
 - Future registry name: `com.socialdatax/youtube-insights`
-- Version: `0.1.0`
+- Version: `0.1.1`
 - Endpoint: `https://mcp.socialdatax.com/youtube/mcp`
 - Auth: `Authorization: Bearer <SOCIALDATAX_API_KEY>`
 - Website and API Key access: <https://socialdatax.com/ai?from=github>
@@ -16,7 +16,7 @@
 ## Safety and publication checks
 
 - No real API Key, private backend code, production configuration, internal sample, or account data is present.
-- `server-card.json`, `registry/youtube/server.json`, and the hosted server card use version `0.1.0` and the same endpoint.
+- `server-card.json`, `registry/youtube/server.json`, the hosted server card, and the official Registry latest use version `0.1.1` and the same endpoint.
 - The hosted card must expose `youtube_search_videos`, `youtube_get_video_detail_by_url`, `youtube_get_video_comments_by_url`, and `youtube_get_channel_info_by_url`.
 - Transcript support must expose `youtube_submit_video_speech_text_by_url`, `youtube_submit_video_speech_text_by_video_id`, and `youtube_get_video_speech_text_job`.
 - Search and list calls pass the opaque `page_token` returned by the service for continuation.
