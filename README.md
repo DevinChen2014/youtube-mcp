@@ -2,6 +2,16 @@
 
 This public listing provides connection metadata and client examples for the hosted SocialDataX YouTube MCP service. The implementation is privately hosted; this directory contains public connection materials only.
 
+<!-- release-status:start -->
+## Recorded release status
+
+- Local metadata: `0.1.3` with 12 tracked tools. Local metadata alone does not establish publication.
+- Hosted production: `0.1.3` with 12 tools; recorded verification on `2026-10-11 19:32` (Asia/Shanghai).
+- Official MCP Registry: `0.1.3` (`active`); recorded verification on `2026-10-11 19:32` (Asia/Shanghai).
+- Registry evidence: [version-specific Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/com.52choujiang%2Fyoutube-insights/versions/0.1.3).
+- These are recorded observations, not a fresh live check. Public GitHub, npm, and other distribution channels require their own verification.
+<!-- release-status:end -->
+
 ## Service
 
 - Hosted MCP endpoint: `https://mcp.socialdatax.com/youtube/mcp`
@@ -11,17 +21,19 @@ This public listing provides connection metadata and client examples for the hos
 - Website and API Key access: <https://socialdatax.com/ai?from=github>
 - Registry name: `com.52choujiang/youtube-insights`
 - Future registry name: `com.socialdatax/youtube-insights`
-- Current public capability version: `0.1.1`
 
 ## Scope
 
-Use this service for public YouTube video search and detail, top-level comments, comment replies, channel info, channel video or Shorts lists, and video speech-to-text transcript jobs. It does not provide account login, posting, editing, liking, commenting, following, or other account actions.
+Use this service for public YouTube channel search, search suggestions, video search and detail, top-level comments, comment replies, channel info, channel video or Shorts lists, and video speech-to-text transcript jobs. It does not provide account login, posting, editing, liking, commenting, following, or other account actions.
 
 ## Tools
 
+
 | Tool | Purpose |
 | --- | --- |
-| `socialdatax_get_points_balance` | Query the current API Key account balance. |
+| `socialdatax_get_points_balance` | Query the current API Key account's SocialDataX points balance / 积分余额、剩余积分或点数. |
+| `youtube_search_channels` | Search channels or creators by keyword; supports page_token. |
+| `youtube_search_suggestions` | Get search-box suggestions from a keyword or phrase; returns `items[].text`, without pagination or video/channel details. |
 | `youtube_search_videos` | Search public videos; use when a search term is available, and continue with `page_token`. |
 | `youtube_get_video_detail_by_url` | Read video details from a video URL. |
 | `youtube_get_channel_info_by_url` | Read channel info from a channel URL. |
