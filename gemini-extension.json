@@ -1,0 +1,22 @@
+{
+  "name": "socialdatax-youtube",
+  "version": "1.0.0",
+  "description": "SocialDataX: YouTube video/channel search, suggestions, details, comments/replies, Shorts, transcripts, paging.",
+  "mcpServers": {
+    "socialdatax-youtube": {
+      "httpUrl": "https://mcp.socialdatax.com/youtube/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SOCIALDATAX_API_KEY}"
+      },
+      "timeout": 300000
+    }
+  },
+  "settings": [
+    {
+      "name": "SocialDataX API Key",
+      "description": "Get your own API Key at https://socialdatax.com/ai?from=gemini-cli. Business calls consume SocialDataX credits.",
+      "envVar": "SOCIALDATAX_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

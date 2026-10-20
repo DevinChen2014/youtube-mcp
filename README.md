@@ -67,3 +67,19 @@ Use the hosted endpoint directly when the client supports authenticated `streama
 For command/stdio-only clients, use `npx -y mcp-remote https://mcp.socialdatax.com/youtube/mcp --header "Authorization: Bearer <SOCIALDATAX_API_KEY>"`. See the files in [examples](examples/).
 
 Request or manage API access at <https://socialdatax.com/ai?from=github>. Never commit a real API Key.
+
+## Gemini CLI extension
+
+Install this service from its public GitHub repository:
+
+```sh
+gemini extensions install https://github.com/DevinChen2014/youtube-mcp
+```
+
+When prompted, enter your own `SOCIALDATAX_API_KEY`. Get a key from [SocialDataX](https://socialdatax.com/ai?from=github); business tool calls consume SocialDataX credits. The extension connects directly to the existing hosted MCP endpoint and does not include the private service implementation.
+
+Verify the connection with `gemini mcp list`. To change the saved key, run:
+
+```sh
+gemini extensions config socialdatax-youtube
+```
